@@ -5,6 +5,7 @@ import LatestLaunchesSlider from '../components/Projects/LatestLaunchesSlider.js
 import AboutHeritage from '../components/About/AboutHeritage.jsx';
 import ArchitecturePillars from '../components/About/ArchitecturePillars.jsx';
 import VirtualFloorPlan from '../components/Features/VirtualFloorPlan.jsx';
+import PortfolioShowcase from '../components/Projects/PortfolioShowcase.jsx';
 import LandownerPartnership from '../components/Landowners/LandownerPartnership.jsx';
 import ClientReviews from '../components/Testimonials/ClientReviews.jsx';
 import { useRealEstate } from '../Context/RealEstateContext.jsx';
@@ -29,8 +30,11 @@ export default function HomePage() {
       {/* 4. Engineering Pillars & Seismic Standards */}
       {/* <ArchitecturePillars /> */}
 
-      {/* 5. Interactive CAD Floorplan Explorer */}
-      <VirtualFloorPlan />
+      {/* 5. All Eyes on Designs - Pinned Scroll-Driven Architectural Portfolio Showcase */}
+      <PortfolioShowcase />
+
+      {/* Optional: Interactive CAD Floorplan Explorer */}
+      {/* <VirtualFloorPlan /> */}
 
       {/* 6. Landowner Joint Venture Calculator & Desk */}
       <LandownerPartnership />
