@@ -38,11 +38,12 @@ export default function ContactPage() {
           <span>HEADQUARTERS & SALES</span>
         </div>
         <h1 className="font-serif text-4xl sm:text-5xl font-bold text-stone-900 tracking-tight leading-[1.15] mb-4">
-          Visit Our Corporate Headquarters in Gulshan
+          Visit Our Corporate Headquarters in Mirpur
         </h1>
         <p className="text-sm md:text-base text-stone-600 leading-relaxed">
-          Arrange an exclusive consultation at our private gallery lounge. Our senior property advisors are 
-          at your service for bespoke investment and landowner partnership advisory.
+          Arrange a consultation at our corporate office in Mirpur, Section-2. Our Managing Director, 
+          directors, and senior project engineers are at your service for Nilachal apartment purchases, 
+          material supply, and landowner joint-venture partnerships.
         </p>
       </div>
 
@@ -58,7 +59,7 @@ export default function ContactPage() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#B48C57] shrink-0 mt-0.5" />
                 <div>
-                  <div className="font-semibold text-stone-900">Gulshan Tower HQ</div>
+                  <div className="font-semibold text-stone-900">Mirpur Section-2 HQ</div>
                   <div className="text-stone-600 mt-0.5">{companyInfo.headquarters}</div>
                 </div>
               </div>
@@ -66,12 +67,12 @@ export default function ContactPage() {
               <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-[#B48C57] shrink-0 mt-0.5" />
                 <div>
-                  <div className="font-semibold text-stone-900">Direct Sales & VIP Concierge</div>
+                  <div className="font-semibold text-stone-900">Direct Sales & Executive Line</div>
                   <a href={`tel:${companyInfo.hotline.replace(/\s+/g, '')}`} className="text-stone-600 hover:text-[#B48C57] block mt-0.5">
-                    Hotline: {companyInfo.hotline}
+                    Managing Director Desk: {companyInfo.hotline}
                   </a>
                   <a href={`tel:${companyInfo.directSales.replace(/\s+/g, '')}`} className="text-stone-600 hover:text-[#B48C57] block">
-                    Sales Desk: {companyInfo.directSales}
+                    Director Desk: {companyInfo.directSales}
                   </a>
                 </div>
               </div>
@@ -79,9 +80,12 @@ export default function ContactPage() {
               <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-[#B48C57] shrink-0 mt-0.5" />
                 <div>
-                  <div className="font-semibold text-stone-900">Electronic Mail</div>
+                  <div className="font-semibold text-stone-900">Official Electronic Mail</div>
                   <a href={`mailto:${companyInfo.email}`} className="text-stone-600 hover:text-[#B48C57] block mt-0.5">
                     {companyInfo.email}
+                  </a>
+                  <a href={`mailto:${companyInfo.salesEmail}`} className="text-stone-600 hover:text-[#B48C57] block">
+                    {companyInfo.salesEmail}
                   </a>
                 </div>
               </div>
@@ -89,9 +93,9 @@ export default function ContactPage() {
               <div className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-[#B48C57] shrink-0 mt-0.5" />
                 <div>
-                  <div className="font-semibold text-stone-900">Gallery Viewing Hours</div>
-                  <div className="text-stone-600 mt-0.5">Saturday – Thursday: 9:30 AM – 7:00 PM</div>
-                  <div className="text-stone-500 text-xs">Friday: By Private Appointment Only</div>
+                  <div className="font-semibold text-stone-900">Corporate Office Hours</div>
+                  <div className="text-stone-600 mt-0.5">Saturday – Thursday: 9:30 AM – 7:30 PM</div>
+                  <div className="text-stone-500 text-xs">Friday: Prior Appointment Only</div>
                 </div>
               </div>
             </div>
@@ -99,10 +103,15 @@ export default function ContactPage() {
 
           <div className="p-6 bg-[#FBFBF9] border border-stone-200 rounded-xl space-y-2">
             <div className="text-xs font-semibold text-[#B48C57] uppercase tracking-wider">
-              Chattogram Regional Office
+              Sister Concern & Supply Division
             </div>
-            <div className="text-sm font-bold text-stone-900">SKz Pine Wood</div>
-            <div className="text-xs text-stone-600">{companyInfo.chittagongOffice}</div>
+            <div className="text-sm font-bold text-stone-900">MB Associates & Building Material Warehouse</div>
+            <div className="text-xs text-stone-600">
+              Importer and supplier of Indian Pakur stones, boulders, and crushed stone aggregates for national mega-projects.
+            </div>
+            <div className="text-xs text-[#B48C57] font-medium pt-1">
+              Member: India-Bangladesh Chamber of Commerce & Industry (IBCCI)
+            </div>
           </div>
         </div>
 
@@ -180,11 +189,11 @@ export default function ContactPage() {
                   onChange={(e) => setFormData({ ...formData, project_interest: e.target.value })}
                   className="w-full px-3.5 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm focus:outline-none focus:border-[#B48C57]"
                 >
-                  <option value="Gulshan & Banani Luxury Penthouse">Gulshan & Banani Luxury Penthouse</option>
-                  <option value="Commercial Headquarter Acquisition">Commercial Headquarter Acquisition</option>
+                  <option value="Nilachal Signature Residential Apartment">Nilachal Signature Residential Apartment</option>
                   <option value="Landowner Joint Venture Partnership">Landowner Joint Venture Partnership</option>
-                  <option value="Corporate Investment Advisory">Corporate Investment Advisory</option>
-                  <option value="General Press & Customer Care">General Press & Customer Care</option>
+                  <option value="Commercial Tower & Office Space (Nilachal 6)">Commercial Tower & Office Space (Nilachal 6)</option>
+                  <option value="Pakur Stone & Mega Infrastructure Supply">Pakur Stone & Mega Infrastructure Supply</option>
+                  <option value="General Corporate & Executive Inquiry">General Corporate & Executive Inquiry</option>
                 </select>
               </div>
 
